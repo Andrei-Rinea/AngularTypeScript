@@ -1,13 +1,19 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en" ng-app="app">
 <head>
     <title>Angular TypeScript</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
     <script src="Scripts/angular.js"></script>
-    <script src="Scripts/app.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
+
+<body ng-controller="MainController">
     <h1>Angular TypeScript</h1>
+
+    <input type="text" ng-model="text" />
+    <div>{{text}}</div>
+    <button ng-click="vm.onClick()">clic mi</button>
+
 </body>
 </html>

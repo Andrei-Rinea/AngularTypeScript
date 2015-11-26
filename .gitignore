@@ -4,3 +4,10 @@ obj/
 bin/
 Scripts/app.js
 Scripts/app.js.map
+app.js
+app.js.map
+*.map
+Scripts/Controllers/MainController.js
+Scripts/Scopes/IMainScope.js
+Scripts/Services/ApiService.js
+Scripts/Services/IApiService.js
