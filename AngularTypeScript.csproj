@@ -59,6 +59,7 @@
       <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -114,10 +115,15 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app.ts" />
     <TypeScriptCompile Include="Scripts\Controllers\MainController.ts" />
+    <TypeScriptCompile Include="Scripts\GlobalConfiguration.ts" />
     <TypeScriptCompile Include="Scripts\Models\Contact.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Entity.ts" />
+    <TypeScriptCompile Include="Scripts\Repo\RepoOperationEvent.ts" />
     <TypeScriptCompile Include="Scripts\Scopes\IMainScope.ts" />
     <TypeScriptCompile Include="Scripts\Services\ApiService.ts" />
-    <TypeScriptCompile Include="Scripts\Services\IRepo.ts" />
+    <TypeScriptCompile Include="Scripts\Repo\IAsyncRepoCallback.ts" />
+    <TypeScriptCompile Include="Scripts\Repo\IAsyncRepo.ts" />
+    <TypeScriptCompile Include="Scripts\Repo\RepoOperation.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />

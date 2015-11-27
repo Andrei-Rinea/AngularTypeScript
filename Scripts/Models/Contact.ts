@@ -1,12 +1,12 @@
-﻿module AngularTypeScript {
+﻿/// <reference path="Entity.ts"/>
 
-    export class Contact {
-        id: number;
+module AngularTypeScript {
+
+    export class Contact extends Entity<number> {
         name: string;
         email: string;
 
         newName: string;
         newEmail: string;
     }
-
 }

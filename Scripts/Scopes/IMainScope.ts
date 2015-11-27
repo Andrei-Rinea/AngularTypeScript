@@ -1,8 +1,10 @@
 ﻿module AngularTypeScript {
 
     export interface IMainScope extends ng.IScope {
-        text: string;
+        contacts: Contact[];
+        loading: boolean;
+        working: boolean;
+        newContact: Contact;
         vm: MainController;
     }
-
 }

@@ -2,7 +2,7 @@
 <html lang="en" ng-app="app">
 <head>
     <title>Angular TypeScript</title>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
 
     <script src="Scripts/angular.js"></script>
     <script src="app.js"></script>
@@ -11,9 +11,18 @@
 <body ng-controller="MainController">
     <h1>Angular TypeScript</h1>
 
-    <input type="text" ng-model="text" />
-    <div>{{text}}</div>
-    <button ng-click="vm.onClick()">clic mi</button>
+    <ul>
+        <li ng-repeat="contact in contacts">
+            {{contact.name}} ({{contact.email}})
+            <button ng-click="vm.delete(contact.id)">dilit</button>
+        </li>
+
+        <li ng-if="loading">loading...</li>
+    </ul>
+
+    <input type="text" ng-model="newContact.name" />
+    <input type="email" ng-model="newContact.email" />
+    <button ng-click="vm.create()">test create</button>
 
 </body>
 </html>
