@@ -120,7 +120,7 @@
     <TypeScriptCompile Include="Scripts\Models\Entity.ts" />
     <TypeScriptCompile Include="Scripts\Repo\RepoOperationEvent.ts" />
     <TypeScriptCompile Include="Scripts\Scopes\IMainScope.ts" />
-    <TypeScriptCompile Include="Scripts\Services\ApiService.ts" />
+    <TypeScriptCompile Include="Scripts\Services\ContactRepo.ts" />
     <TypeScriptCompile Include="Scripts\Repo\IAsyncRepoCallback.ts" />
     <TypeScriptCompile Include="Scripts\Repo\IAsyncRepo.ts" />
     <TypeScriptCompile Include="Scripts\Repo\RepoOperation.ts" />

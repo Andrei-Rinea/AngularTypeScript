@@ -55,12 +55,12 @@
         }
 
         delete(id: number) {
-            // TODO: Fix this shit !!!
             const contacts = this.$scope.contacts;
-            for (let contact in contacts) {
-                if (contacts.hasOwnProperty(contact)) {
-                    if (contact.id === id)
-                        this.apiService.delete(contact);
+            for (let i = 0; i < contacts.length; i++) {
+                const contact = contacts[i];
+                if (contact.id === id) {
+                    this.apiService.delete(contact);
+                    break;
                 }
             }
         }

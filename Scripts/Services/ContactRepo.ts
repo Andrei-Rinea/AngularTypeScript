@@ -1,6 +1,6 @@
 ﻿module AngularTypeScript {
 
-    export class ApiService implements IAsyncRepo<Contact> {
+    export class ContactRepo implements IAsyncRepo<Contact> {
 
         private callback: IAsyncRepoCallback<Contact>;
 
