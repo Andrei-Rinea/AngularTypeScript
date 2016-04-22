@@ -6,6 +6,9 @@
         working: boolean;
         newContact: Contact;
         vm: MainController;
+
+        orderPredicate: string;
+        orderReverse: boolean;
     }
 
 }

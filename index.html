@@ -41,8 +41,8 @@
 
             <br />
 
-            <!-- ng-disabled="!newValid() || working" -->
             <button ng-click="vm.onCreate()"
+                    ng-disabled="!vm.newValid() || working"
                     class="btn btn-default">
                 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 Create contact
