@@ -148,7 +148,7 @@
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
-    <Compile Include="Filters\DelaySecondsAttribute.cs" />
+    <Compile Include="Filters\DelayMillisecondsAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

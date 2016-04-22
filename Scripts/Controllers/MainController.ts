@@ -7,7 +7,6 @@
             private $http: ng.IHttpService) {
 
             $scope.vm = this;
-            $scope.contacts = [];
             this.reload();
         }
 
@@ -22,10 +21,15 @@
         }
 
         reload() {
+            this.$scope.loading = true;
             this.$http.get<Contact[]>("/api/contacts")
                 .then(r => {
+                    this.$scope.loading = false;
                     this.$scope.contacts = r.data;
-                }, e => { alert('eroare'); });
+                }, e => {
+                    this.$scope.loading = false;
+                     alert('eroare');
+                });
         }
     }
 }

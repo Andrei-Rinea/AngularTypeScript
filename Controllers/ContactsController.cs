@@ -16,7 +16,7 @@ namespace AngularIntro.Controllers
             _contactRepository = contactRepository;
         }
 
-        [DelaySeconds(1)]
+        [DelayMilliseconds(100)]
         public IEnumerable<Contact> Get()
         {
             return _contactRepository.GetAll();

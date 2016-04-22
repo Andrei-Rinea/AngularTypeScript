@@ -7,12 +7,12 @@ using System.Web.Http.Filters;
 
 namespace AngularIntro.Filters
 {
-    public class DelaySecondsAttribute : ActionFilterAttribute
+    public class DelayMillisecondsAttribute : ActionFilterAttribute
     {
         private readonly TimeSpan _duration;
 
-        public DelaySecondsAttribute(ushort seconds = 2) : this(TimeSpan.FromSeconds(seconds)) { }
-        private DelaySecondsAttribute(TimeSpan duration)
+        public DelayMillisecondsAttribute(ushort milliseconds = 1000) : this(TimeSpan.FromMilliseconds(milliseconds)) { }
+        private DelayMillisecondsAttribute(TimeSpan duration)
         {
             _duration = duration;
         }
