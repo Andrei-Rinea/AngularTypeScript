@@ -108,7 +108,7 @@
     <Content Include="Content\normalize.css" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\oldapp.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="App_Data\data.csv" />
     <None Include="Web.Debug.config">
