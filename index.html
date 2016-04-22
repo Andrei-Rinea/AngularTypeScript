@@ -7,14 +7,14 @@
     <link href="Content/normalize.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
 </head>
-<body ng-app="main" class="container-fluid">
+<body ng-app="app" class="container-fluid">
 
     <header class="jumbotron">
         <h1>AngularJS Intro</h1>
         <p>a gentle start, we scratch the surface</p>
     </header>
 
-    <main ng-controller="mainController">
+    <main ng-controller="MainController">
         <section>
             <h4>Add new contact:</h4>
             <div class="input-group">
@@ -23,7 +23,7 @@
                 </span>
                 <input type="text"
                        placeholder="name"
-                       ng-model="newName"
+                       ng-model="newContact.name"
                        required="required"
                        class="form-control" />
             </div>
@@ -34,15 +34,15 @@
                 <span class="input-group-addon">@</span>
                 <input type="email"
                        placeholder="email"
-                       ng-model="newEmail"
+                       ng-model="newContact.email"
                        required="required"
                        class="form-control" />
             </div>
 
             <br />
 
-            <button ng-click="onCreate()"
-                    ng-disabled="!newValid() || working"
+            <!-- ng-disabled="!newValid() || working" -->
+            <button ng-click="vm.onCreate()"
                     class="btn btn-default">
                 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 Create contact
@@ -151,7 +151,8 @@
         </section>
     </main>
 
-    <script src="Scripts/oldapp.js" type="text/javascript"></script>
+    <!--<script src="Scripts/oldapp.js" type="text/javascript"></script>-->
+    <script src="app.js"></script>
     <script src="Scripts/bootstrap.js" type="text/javascript"></script>
 </body>
 </html>
