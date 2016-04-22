@@ -7,6 +7,8 @@
             private $http: ng.IHttpService) {
 
             $scope.vm = this;
+            $scope.contacts = [];
+            this.reload();
         }
 
         onCreate() {
@@ -14,11 +16,16 @@
             this.$http.put<number>("/api/contacts", contact)
                 .then(r => {
                     contact.id = r.data;
-                    // inserare in lista dupa ce o facem functionala
+                    this.$scope.contacts.push(contact);
                     this.$scope.newContact = new Contact();
-                }, e => {
-                    alert('eroare');
-                });
+                }, e => { alert('eroare'); });
+        }
+
+        reload() {
+            this.$http.get<Contact[]>("/api/contacts")
+                .then(r => {
+                    this.$scope.contacts = r.data;
+                }, e => { alert('eroare'); });
         }
     }
 }
