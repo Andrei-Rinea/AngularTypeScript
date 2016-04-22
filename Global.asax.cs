@@ -2,7 +2,7 @@
 using System.Web;
 using System.Web.Http;
 
-namespace AngularTypeScript
+namespace AngularIntro
 {
     public class Global : HttpApplication
     {
@@ -13,6 +13,8 @@ namespace AngularTypeScript
                 "default",
                 "api/{controller}/{id}",
                 new { id = RouteParameter.Optional });
+
+            UnityConfig.RegisterComponents();
         }
     }
 }

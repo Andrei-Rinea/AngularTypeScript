@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AngularTypeScript")]
+[assembly: AssemblyTitle("WebApplication6")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AngularTypeScript")]
+[assembly: AssemblyProduct("WebApplication6")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("73b26f8d-8ff7-4dd9-a8a7-b39d533c174d")]
+[assembly: Guid("00f4a5ce-db8c-41cf-bc67-1eae863c3275")]
 
 // Version information for an assembly consists of the following four values:
 //
