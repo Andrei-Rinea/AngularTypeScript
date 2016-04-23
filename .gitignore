@@ -5,3 +5,4 @@ bin/
 app.js
 *.map
 App_Data/data.csv
+*.user
